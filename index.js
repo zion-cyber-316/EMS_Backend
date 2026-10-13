@@ -50,6 +50,10 @@ app.use("/api/project",ProjectRouter)
 
 
 
+app.get("/",(req,res)=>{
+  res.send("EMS server is start ...")
+})
+
 
 /// conecting server 
 app.listen(Port,()=>{
